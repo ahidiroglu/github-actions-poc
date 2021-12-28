@@ -18,8 +18,13 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest #
+    #runs-on: ubuntu-latest #runs on latest ubuntu
 #pre-defined library that you can include on your pipeline or simply write your own.
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows, macOS]
+
     steps:
     - uses: actions/checkout@v2 
     - name: Set up JDK 11

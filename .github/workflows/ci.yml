@@ -8,9 +8,9 @@
 name: Java CI with Gradle #optinal
 
 #events that should trigger CI workflow. 
-# on:
-#   push:
-#     branches: [ main ] #target is main branch
+on:
+  push:
+    branches: [ main ] #target is main branch
 #   pull_request:
 #     branches: [ main ] #PR can be pr_request_event or main branch
 

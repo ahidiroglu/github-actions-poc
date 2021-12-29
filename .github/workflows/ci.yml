@@ -11,8 +11,8 @@ name: Java CI with Gradle #optinal
 on:
   push:
     branches: [ main ] #target is main branch
-#   pull_request:
-#     branches: [ main ] #PR can be pr_request_event or main branch
+  pull_request:
+    branches: [ main ] #PR can be pr_request_event or main branch
 
 #build stage
 jobs:

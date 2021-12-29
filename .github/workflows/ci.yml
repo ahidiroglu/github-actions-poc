@@ -11,8 +11,8 @@ name: Java CI with Gradle #optinal
 on:
   push:
     branches: [ main ] #target is main branch
-  pull_request:
-    branches: [ main ] #PR can be pr_request_event or main branch
+#   pull_request:
+#     branches: [ main ] #PR can be pr_request_event or main branch
 
 #build stage
 jobs:
@@ -53,8 +53,7 @@ jobs:
     #   with:
     #     arguments: build
     
-    - name: Build Docker Image
-      id: buildAndPushImage
+    - name: Build and Push Docker Image
       uses: abhishek-070/docker-image-build-push-action@v1.0
       with:
         image: alikutay/test-actions

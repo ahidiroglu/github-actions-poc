@@ -1,3 +1,8 @@
+*** Runner Server Managed by Github ***
+
+- Runners can be run on: Ubuntu, Windows and MacOs
+
+
 ##### build the project
 
     ./gradlew build

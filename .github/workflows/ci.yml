@@ -63,8 +63,8 @@ jobs:
       name: Login to DockerHub Build and Push  
       uses: NRO04/docker-build-push-action@v2
       with:
-        name-repository: alikutay
-        tag: test-actions:latest
+        name-repository: alikutay/github-actions
+        tag: v1
         docker-username: ${{ secrets.DOCKER_USERNAME }}
         docker-password: ${{ secrets.DOCKER_PASSWORD }}     
 
